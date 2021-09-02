@@ -15,7 +15,7 @@ A module that simplify the process to call SQL database
 9. Remind to `conn.close()` or you can just use `with conn.cursor() as executor:` at start
 
 
-
+### Example Codes
 ```python
 db_settings = {
     "host": "your_host",
@@ -25,6 +25,24 @@ db_settings = {
     "database": "your_database_name",
     "charset": "utf8",
 }
+```
+
+```python
+import sql_command as sql
+import pymysql
+
+conn = pymysql.connect(**db_settings)
+
+with conn.cursor() as executor:
+    executor.execute(
+        searchCommand(listFrom="資料表", key="搜尋條件", searchBy = 搜尋值)
+    )
+    results = executor.fetchall()
+
+print(results)
+    # > results
+print(type(results))
+    # > Tuple(Tuple)
 ```
 
 ## Download
