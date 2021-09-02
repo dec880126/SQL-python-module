@@ -34,8 +34,8 @@ import pymysql
 conn = pymysql.connect(**db_settings)
 
 with conn.cursor() as executor:
-    sql.executor.execute(
-        searchCommand(listFrom="資料表", key="搜尋條件", searchBy = 搜尋值)
+    executor.execute(
+        sql.searchCommand(listFrom="資料表", key="搜尋條件", searchBy = 搜尋值)
     )
     results = executor.fetchall()
 
