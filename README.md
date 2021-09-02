@@ -8,6 +8,10 @@ A module that simplify the process to call SQL database
 2. Use import method: `import sql_command`
 3. Call the function you need !
 
+## Download
+
+ - [Latest Release](https://github.com/dec880126/SQL-python-module/releases)
+
 ## Supported functions
 
 ### searchCommand()
