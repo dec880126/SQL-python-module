@@ -14,6 +14,19 @@ A module that simplify the process to call SQL database
 8. Get the result by `executor.fetchall()` or `executor.fetchone()`
 9. Remind to `conn.close()` or you can just use `with conn.cursor() as executor:` at start
 
+
+
+```python
+db_settings = {
+    "host": "your_host",
+    "port": "your_port",
+    "user": "your_username",
+    "password": "your_password",
+    "database": "your_database_name",
+    "charset": "utf8",
+}
+```
+
 ## Download
 
  - [Latest Release](https://github.com/dec880126/SQL-python-module/releases)
