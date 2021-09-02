@@ -6,7 +6,13 @@ A module that simplify the process to call SQL database
 
 1. Put **sql_command.py** at the same directory with your main python file
 2. Use import method: `import sql_command`
-3. Call the function you need !
+3. `import pymysql`
+4. set up your database setting
+5. `conn = pymysql.connect(**db_settings)`
+6. `executor = conn.cursor()`
+7. `executor.execute(SQL-python-module Supported functions)`
+8. Get the result by `executor.fetchall()` or `executor.fetchone()`
+9. Remind to `conn.close()` or you can just use `with conn.cursor() as executor:` at start
 
 ## Download
 
