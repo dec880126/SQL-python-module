@@ -2,7 +2,7 @@
 
 A module that simplify the process to call SQL database
 
-## How to use
+## Quick Start
 
 1. Put **sql_command.py** at the same directory with your main python file
 2. Use import method: `import sql_command`
